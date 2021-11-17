@@ -10,8 +10,8 @@ export const App: FC<{}> = props => {
     })
     return (
         <div className='BuisnessCardApp'>
-            <Header></Header>
-            <Main></Main>
+            <Header/>
+            <Main/>
         </div>
     );
 };

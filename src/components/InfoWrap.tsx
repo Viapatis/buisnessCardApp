@@ -1,11 +1,16 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
+import { useScrollToElement } from './hooks';
 interface InfoWrapProps {
-    title: string
+    title: string,
 }
 export const InfoWrap: FC<InfoWrapProps> = props => {
     const { title, children } = props;
+    const [divRef, scrollToElement] = useScrollToElement(title.toLowerCase());
+    useEffect(() => {
+        scrollToElement();
+    })
     return (
-        <div className='info-wrap'>
+        <div ref={divRef} className='info-wrap'>
             <h2 className='info-wrap_title'>{title}</h2>
             <div className='info-wrap_content'>{children}</div>
         </div>

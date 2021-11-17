@@ -1,11 +1,39 @@
 import { FC } from 'react';
+import { useAppSelector } from '../store/hooks';
+import InfoWrap from './InfoWrap';
 import MainInfo from './MainInfo';
-export const main: FC<{}> = props => {
-
+import LoadRing from './LoadRing'
+import EducationInfo from './EducationInfo';
+import SkillInfo from './SkillInfo';
+export const Main: FC<{}> = props => {
+    const { userInfo, requestInfo } = useAppSelector(state => state.main);
+    const fulfilled = requestInfo.status === 'fulfilled';
+    const pending = requestInfo.status === 'pending';
     return (
         <div className='main'>
-            <MainInfo></MainInfo>
+            {fulfilled ?
+                <div className='main-content'>
+                    <MainInfo />
+                    <InfoWrap title='Education'>
+                        {userInfo!.educations.map(
+                            (education, i) =>
+                                <EducationInfo key={education.degree + i} {...education} />)
+                        }
+                    </InfoWrap>
+                    <InfoWrap title='Skills'>
+                        {userInfo!.skills.map(
+                            (skill, i) =>
+                                <SkillInfo key={skill + i} skillName={skill} />)
+                        }
+                    </InfoWrap>
+                </div>
+                :
+                <div className='main-content'>
+                    {pending ? <LoadRing /> : ''}
+                </div>
+            }
+
         </div>
     );
 };
-export default main;
+export default Main;
