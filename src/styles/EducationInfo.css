@@ -1,0 +1,23 @@
+.education{
+    display: flex;
+    margin: 20px 0;
+    padding-bottom: 1rem;
+}
+.education-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    text-align: center;
+    
+}
+.education-content div{
+    margin-bottom: 10px;
+}
+.education-date{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.education-date div{
+    margin: 0 5px;
+}

@@ -1,0 +1,29 @@
+.info-wrap {
+    display: flex;
+    flex-flow: row;
+}
+
+.info-wrap_title {
+    padding: 2.5rem;
+    min-width: 200px;
+    text-align: right;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.info-wrap_content {
+    margin-right: 20px;
+    flex-grow: 2;
+    padding-left: 30px;
+    padding-top: 2.5rem;
+}
+
+@media (max-width: 800px) {
+    .info-wrap {
+        flex-wrap: wrap;
+    }
+    .info-wrap_title {
+        text-align: center;
+        width: 100%;
+    }
+}

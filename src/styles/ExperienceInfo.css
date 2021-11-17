@@ -1,0 +1,23 @@
+.experience{
+    display: flex;
+    margin: 20px 0;
+    padding-bottom: 1rem;
+}
+.experience-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    text-align: center;
+    
+}
+.experience-content div{
+    margin-bottom: 10px;
+}
+.experience-date{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.experience-date div{
+    margin: 0 5px;
+}

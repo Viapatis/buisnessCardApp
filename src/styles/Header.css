@@ -1,0 +1,16 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding-left:1.75rem;
+}
+
+.navigate-link {
+    text-decoration: none;
+    color: #4669a8;
+    padding: 5px;
+    font-size: 16px;
+}
