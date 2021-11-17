@@ -1,0 +1,12 @@
+.contact{
+    text-align: center;
+    padding-right: 50px;
+    margin-top:50px;
+}
+.contact-type{
+    padding-bottom: 10px;
+}
+.contact-link{
+    text-decoration: none;
+    color: inherit;
+}

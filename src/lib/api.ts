@@ -13,7 +13,7 @@ function pseudoApiCall() {
                 location: 'Russian Federation, Novosibirsk',
                 contacts: ['+79529452454', 'aannddreika@gmail.com', 'https://t.me/umr_atTavil'],
                 educations: [
-                    genEduInfoObjNSTUandPAT('03.03.02', 'Physics', 'Aug 01 2014', 'Jun 20 2018', 'bachelor'),
+                    genEduInfoObjNSTUandPAT('03.03.02', 'Physics', 'Aug 01 2014', 'Jun 20 2018', 'Bachelor'),
                     genEduInfoObjNSTUandPAT('03.03.02', 'Physics', 'Aug 01 2018', 'Jun 23 2021', 'Master')
                 ],
                 skills: [
@@ -31,7 +31,7 @@ function pseudoApiCall() {
                     'Java'
                 ]
             })
-        }, 200)
+        }, 500)
     })
 }
 function genEduInfoObjNSTUandPAT(

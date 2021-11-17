@@ -12,10 +12,10 @@
     width: 64px;
     height: 64px;
     margin: 8px;
-    border: 8px solid #F8BB10;
+    border: 8px solid #4669a8;
     border-radius: 50%;
     animation: load-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #F8BB10 transparent transparent transparent;
+    border-color: #4669a8 transparent transparent transparent;
 }
 .load{
     display: flex;

@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { useAppSelector } from '../store/hooks';
+import '../styles/LoadRing.css'
 export const MainInfo: FC<{}> = props => {
     const userInfo = useAppSelector(state => state.main.userInfo);
     return (

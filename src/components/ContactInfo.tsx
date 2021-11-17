@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import '../styles/ContactInfo.css'
 interface ContactInfoProps {
     link: string,
     type: string,

@@ -5,6 +5,7 @@ import MainInfo from './MainInfo';
 import LoadRing from './LoadRing'
 import EducationInfo from './EducationInfo';
 import SkillInfo from './SkillInfo';
+import '../styles/Main.css'
 export const Main: FC<{}> = props => {
     const { userInfo, requestInfo } = useAppSelector(state => state.main);
     const fulfilled = requestInfo.status === 'fulfilled';
@@ -21,10 +22,12 @@ export const Main: FC<{}> = props => {
                         }
                     </InfoWrap>
                     <InfoWrap title='Skills'>
-                        {userInfo!.skills.map(
-                            (skill, i) =>
-                                <SkillInfo key={skill + i} skillName={skill} />)
-                        }
+                        <div className='skills'>
+                            {userInfo!.skills.map(
+                                (skill, i) =>
+                                    <SkillInfo key={skill + i} skillName={skill} />)
+                            }
+                        </div>
                     </InfoWrap>
                 </div>
                 :

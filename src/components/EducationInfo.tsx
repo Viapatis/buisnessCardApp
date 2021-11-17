@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Education } from '../lib/interfaces';
-
+import '../styles/EducationInfo.css'
 export const EducationInfo: FC<Education> = props => {
     const { university,
         derictionName,
@@ -10,7 +10,7 @@ export const EducationInfo: FC<Education> = props => {
     const dateEnd = formatingDateString(props.dateEnd);
     return (
         <div className='education'>
-            <div className='education-date'> {dateStart} — {dateEnd}</div>
+            <div className='education-date'> <div>{dateStart}</div> — <div>{dateEnd}</div></div>
             <div className='education-content'>
                 <div className='degree'>{degree}</div>
                 <div className='university'>{university}</div>

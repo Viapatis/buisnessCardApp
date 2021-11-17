@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { useAppSelector } from '../store/hooks';
 import { Link } from 'react-router-dom';
+import '../styles/Header.css'
 export const Header: FC<{}> = props => {
     const { menuItems } = useAppSelector(state => state.header);
 

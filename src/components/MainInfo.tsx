@@ -1,8 +1,9 @@
-import { FC,  useEffect } from 'react';
+import { FC, useEffect } from 'react';
 import { useAppSelector } from '../store/hooks';
 import pict from '../photo79.png';
 import ContactInfo from './ContactInfo'
 import { useScrollToElement } from './hooks';
+import '../styles/MainInfo.css'
 interface Contact {
     type: string,
     link: string,
@@ -11,14 +12,14 @@ interface Contact {
 export const MainInfo: FC<{}> = props => {
     const { name, contacts, location, img } = useAppSelector(state => state.main.userInfo)!;
     const typedContacts = contacts.map(contact => getTypedContact(contact));
-    const [divRef,scrollToElement]=useScrollToElement('base');
+    const [divRef, scrollToElement] = useScrollToElement('base');
     useEffect(() => {
         scrollToElement()
     })
     return (
         <div ref={divRef} className='main-info'>
             <div className='main-info_img-wrap'>
-                <img alt='person' src={pict} />
+                <img alt='person' className='main-info_img' src={pict} />
             </div>
             <div className='main-info_content'>
                 <h1 className='name'>{name}</h1>

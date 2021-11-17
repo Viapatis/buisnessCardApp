@@ -1,5 +1,6 @@
 import { FC, useEffect } from 'react';
 import { useScrollToElement } from './hooks';
+import '../styles/InfoWrap.css'
 interface InfoWrapProps {
     title: string,
 }
