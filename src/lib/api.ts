@@ -29,6 +29,29 @@ function pseudoApiCall() {
                     'AutoCAD',
                     'Proteus ISIS',
                     'Java'
+                ],
+                experience: [
+                    {
+                        dateStart: '09.01.2019',
+                        dateEnd: '07.01.2021',
+                        placeOfWork: 'INP SB RAS',
+                        position: 'Software Developer',
+                        about: 'Software development for automation and data collection systems, mainly in C.'
+                    },
+                    {
+                        dateStart: '12.01.2018',
+                        dateEnd: '08.01.2019',
+                        placeOfWork: 'Navitel',
+                        position: 'Specialist of the technological department of cartography',
+                        about: 'Development of automated testing algorithms, mainly using js es5 and bash.'
+                    },
+                    {
+                        dateStart: '09.01.2016',
+                        dateEnd: '07.01.2018',
+                        placeOfWork: 'INP SB RAS',
+                        position: 'Laboratory assistant 4 category',
+                        about: 'Developed software in С / С ++ / LabVIEW.'
+                    }
                 ]
             })
         }, 500)

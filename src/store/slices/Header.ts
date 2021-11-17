@@ -4,7 +4,7 @@ export interface HeaderState {
     menuItems: Record<string, string>
 }
 const initialState = {
-    menuItems: { base: 'Base Information', education: 'Education', skills: 'Skills' }
+    menuItems: { base: 'Base Information', education: 'Education', experience: 'Experience', skills: 'Skills' }
 } as HeaderState;
 
 

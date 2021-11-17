@@ -6,6 +6,7 @@ import LoadRing from './LoadRing'
 import EducationInfo from './EducationInfo';
 import SkillInfo from './SkillInfo';
 import '../styles/Main.css'
+import ExperienceInfo from './ExperienceInfo';
 export const Main: FC<{}> = props => {
     const { userInfo, requestInfo } = useAppSelector(state => state.main);
     const fulfilled = requestInfo.status === 'fulfilled';
@@ -19,6 +20,12 @@ export const Main: FC<{}> = props => {
                         {userInfo!.educations.map(
                             (education, i) =>
                                 <EducationInfo key={education.degree + i} {...education} />)
+                        }
+                    </InfoWrap>
+                    <InfoWrap title='Experience'>
+                        {userInfo!.experience.map(
+                            (exp, i) =>
+                                <ExperienceInfo key={exp.placeOfWork + i} {...exp} />)
                         }
                     </InfoWrap>
                     <InfoWrap title='Skills'>

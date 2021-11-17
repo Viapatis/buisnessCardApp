@@ -7,7 +7,13 @@ export interface Education {
     dateEnd: string,
     faculty: string
 }
-
+export interface Experience {
+    dateStart: string,
+    dateEnd: string,
+    placeOfWork: string,
+    position: string,
+    about: string
+}
 export interface UserInformation {
     name: string,
     dateOfBirth: string,
@@ -15,6 +21,7 @@ export interface UserInformation {
     location: string,
     contacts: string[],
     educations: Education[],
-    skills: string[]
+    skills: string[],
+    experience: Experience[]
 }
 
