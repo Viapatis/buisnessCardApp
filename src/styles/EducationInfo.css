@@ -1,6 +1,7 @@
 .education{
     display: flex;
     margin: 20px 0;
+    padding-bottom: 1rem;
 }
 .education-content{
     display: flex;

@@ -1,6 +1,7 @@
 .experience{
     display: flex;
     margin: 20px 0;
+    padding-bottom: 1rem;
 }
 .experience-content{
     display: flex;
